@@ -1,0 +1,151 @@
+.artefactos{
+    background-color: #24a6f0;
+    background-image: url(/imagenes/artefactos-movil.jpg);
+  
+    &-left {
+    padding-left: 20px;
+    height: 350px;
+    
+    .formulario {
+        width: 343px;
+        min-height: 357px;
+        background: #ffffff;
+        border-radius: 25px;
+        margin-top: 75px;
+        .btn-primary {
+        background: #23a6f0;
+        border-radius: 37px;
+        }
+        .btn-secondary {
+        border: 1px solid #23a6f0;
+        border-radius: 37px;
+        background: none;
+        color: #23a6f0;
+        }
+
+        a {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: -0.04em;
+
+        color: #23a6f0;
+        }
+        input {
+        background: #ffffff;
+        border: 0.5px solid #252b42;
+        border-radius: 4px;
+        height: 50.57px;
+        }
+    }
+    .blanco-base {
+        width: 343px;
+        background: #ffffff;
+        border-radius: 25px 25px 0 0;
+        height: 40px;
+        margin-bottom: -1px;
+    }
+    }
+    &-center {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    padding-bottom: 35px;
+
+    .btn {
+        background: #f78107;
+        border-radius: 37px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+        padding: 10px 20px;
+    }
+    }
+    &-right {
+    height: 500px;
+    background-position: right;
+    background-size: cover;
+    }
+    &-text{
+    color: white;
+    letter-spacing: 0.2px;
+    h1{
+        font-size: 30px; 
+        font-weight: 700;
+    }
+    p{
+        font-size: 17px; 
+        font-weight: 600;
+    }
+    }
+}
+.container-formulario{
+    width: 960px;
+    margin: 0 auto 30px auto;
+    background-color: #0094D2;
+    .header-form{
+        background-color: #BFC104;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        .title-form{
+            background-color: #0094D2;
+            padding: 2px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 28px;
+            font-weight: 900;
+        }
+        .subtitle-form{
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 6px;
+        }
+    }
+    .formulario{
+        .btn-custom{
+            background-color: #BFC104;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            padding: 8px 10px;
+        }
+        /*.was-validated .form-control:invalid, .form-control.is-invalid {
+            border-color: #ff8a07 !important;
+        }*/
+        .invalid-feedback {
+            color: #fbff07 !important;
+            //text-shadow: #bfbaba 0px 0px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .artefactos {
+        &-left {
+            padding-left: 20px;
+            height: 400px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+    .artefactos{
+        background-image: url(/imagenes/artefactos.jpg);
+    }
+}
+

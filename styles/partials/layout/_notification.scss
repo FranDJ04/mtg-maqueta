@@ -1,0 +1,46 @@
+.alert-panel {
+  background: #FFE500;
+  border: 1px solid #FFB905;
+  text-align: center;
+  text-align: -webkit-center;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    margin: 15px;
+  }
+
+  p {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: #003558;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .alert-panel {
+    margin-right: -$grid-gutter-width * 0.5;
+    margin-left: -$grid-gutter-width * 0.5;
+    @include margin-general();
+
+    p {      
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      width: 25%;
+    }
+  }
+}

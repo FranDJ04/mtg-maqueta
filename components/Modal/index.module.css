@@ -1,0 +1,107 @@
+.ModalBody {
+  /*padding-top: 10px;*/
+  flex-grow: 1;
+}
+.ModalBody iframe {
+    width: 100%; 
+    height: 100%; 
+    border: none; 
+    margin: 0; 
+    padding: 0; 
+    display: block;
+}
+
+.ModalHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+
+.ModalWrapper {
+  width: 500px;
+  height: 600px;
+}
+
+.Modal {
+  height:100%;
+  width:100%;
+  border-radius: 15px;
+  /*padding: 15px;*/
+  display: flex; 
+  flex-direction: column;
+
+}
+
+.black {
+  background: black;
+  color: white;
+}
+.white {
+  background: white;
+  color: black;
+}
+.white .ModalHeader {
+  border-bottom: 1px solid black;
+}
+.white .ModalBody {
+  padding: 1em;
+}
+
+.ModalTitle {
+  padding: 0.3em 0;
+}
+
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttons { 
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btncircle{
+  display: flex;
+  cursor: pointer;
+  background: white;
+  border-radius: 50px;
+  border: 2px solid #a0ce5b;
+} 
+.btncircle>div:first-child {
+  background: white;
+  padding: 26px 26px 26px 30px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem #46a22e); 
+  border: 1px solid #a0ce5b; 
+}
+.btncircle>div:nth-child(2) {
+  align-self: center;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-right: 2em;
+}
+.btncircle:hover>div:first-child  {
+  padding: 24px 24px 24px 28px;
+  color: red;
+}
+
+/* Pantallas medianas (tablets de más de 768px) */
+@media (min-width: 768px) { 
+  .ModalHeader { 
+    font-size: 25px; 
+  }
+}

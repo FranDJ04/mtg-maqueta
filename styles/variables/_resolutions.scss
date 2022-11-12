@@ -1,0 +1,12 @@
+
+@mixin margin-general($space:1) {
+    padding-left: 70px*$space !important;
+    padding-right: 70px*$space !important;
+}
+
+@mixin margin-mobile() {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+    

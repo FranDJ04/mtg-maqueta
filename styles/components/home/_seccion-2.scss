@@ -1,0 +1,117 @@
+.home2 {
+    @include margin-mobile();
+  
+    &-left {
+      // height: 390px;
+      .azul-base {
+        width: 343px;
+        background: #23a6f0 ;
+        border-radius: 25px 25px 0 0;
+        height: 40px;
+        margin-bottom: -1px;
+      }
+    }
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 39px;
+      /* or 98% */
+  
+      letter-spacing: -1.8px;
+  
+      color: #23a6f0;
+    }
+  
+    .bordes {
+      //background: #23a6f0;
+      border-radius: 10px;
+      //margin: 54px 0;
+      padding: 0 0px 50px 0px;
+      min-height: 200px;
+  
+      .col-lg-6 {
+        padding-top: 50px;
+      }
+      .col-xl-4 {
+        padding-top: 20px;
+      }
+
+      .icono{
+        cursor: pointer;
+      }
+  
+      .opcion {
+        background: #ffffff;
+        //box-shadow: 0px 0px 16px 1px rgba(9, 240, 255, 0.7);
+        border-radius: 8px;
+        height: 58px;
+        //padding: 0 17px;
+        border: 1px solid #23a6f0;
+  
+        span {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 12px;
+  
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.01em;
+  
+          color: #23a6f0;
+        }
+        button {
+          background: #23a6f0;
+          color: #ffffff;
+          width: 32px;
+          height: 31px;
+          border-radius: 50%;
+          border: 1px solid white;
+        }
+      }
+      .opcion:hover{
+        box-shadow: 0px 0px 16px 1px rgba(9, 240, 255, 0.7);
+      }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .home2 {
+      @include margin-general();
+      &-left {
+        height: 390px;
+      }
+      
+      .bordes{
+        background: #23a6f0;
+        margin: 54px 0;
+        padding: 0 10px 0px 10px;
+
+        .opcion{
+          padding: 0 0px;
+          height: 75px;
+          span{
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
+      }
+
+    }
+}
+@include media-breakpoint-up(xl) {
+  .home2 {
+    .bordes{
+      .opcion{
+        span{
+          font-size: 1rem;
+          line-height: 17px;
+        }
+      }
+    }
+
+  }
+}

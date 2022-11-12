@@ -1,0 +1,284 @@
+body {
+  font-family: 'Montserrat';
+}
+
+.content {
+}
+
+.pgheader {
+  background-color: #24a6f0;
+  color: white;
+
+  &-left {
+    padding-left: 70px;
+    height: 200px;
+  }
+  .blanco-base {
+    width: 343px;
+    background: #ffffff;
+    border-radius: 25px 25px 0 0;
+    height: 40px;
+    margin-bottom: -1px;
+  }
+}
+
+.titulo{
+  h1{
+      font-family: 'Archivo Black', sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 40px !important;
+      line-height: 40px !important;
+      letter-spacing: 0.2px !important;
+      color: #ffffff;
+  }
+  h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px; 
+    letter-spacing: 0.2px; 
+    color: #FFFFFF;
+    background: #BACF09;
+    display: inline-block;
+    padding: 0 10px;
+  }
+}
+
+.pagina {
+  margin-top: 70px;
+  @include margin-mobile();
+
+  p {
+    width: 100%;
+  }
+  h5 {
+    margin-top: 2rem;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .pagina {
+    @include margin-general();
+  }
+}
+
+.inversionistas {
+  background: #ffffff;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 39px;
+    letter-spacing: -1.8px;
+    color: #23A6F0;
+  }
+}
+
+span.text-general {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 32px;
+/* or 123% */
+
+letter-spacing: 0.2px;
+
+color: #23A6F0;
+}
+
+button.btn-redondeado {
+  background: #23a6f0;
+  border-radius: 37px;
+  border-color: #23a6f0;
+}
+
+.boleta {
+  &-titulo{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    color: #23A6F0;
+    margin-bottom: 0.5rem;
+  }
+  &-cuerpo{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    color: #525353;
+    margin-bottom: 2rem;
+  }
+}
+
+h4.boleta {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+}
+
+.card-block {
+  background: #FBFBFB;
+  border: 1px solid rgba(35, 166, 240, 0.5);
+  border-radius: 15px;
+
+  .card-header {
+    background: #23A6F0;
+    border-radius: 15px 15px 0px 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px; 
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+
+  .card-body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #23A6F0;
+  }
+
+}
+
+.boleta-boton{
+  .btn {
+    background: #BACF09;
+    border-radius: 37px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    padding: 10px 20px;
+  }
+  .btn:hover{
+    box-shadow: 0px 0px 7px 1px #9fad2d;
+  }
+}
+
+.cuadrito{
+  .card-block {
+    background: #BACF09;
+    border: 1px solid #BACF09;
+    border-radius: 15px;
+    .card-body {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+    }
+    img{
+      width: 120px;
+      height: 120px;
+    }
+    .btn {
+      background: #23A6F0;
+      border-radius: 37px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      padding: 10px 20px;
+    }
+    .btn:hover{
+      box-shadow: 0px 0px 7px 1px #23A6F0;
+    }
+  }
+}
+
+.bullet-point {  
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #FF3E00;
+    padding: 4px;
+    animation: border-pulsate 1.5s infinite;
+    cursor: pointer;
+  div {
+    background: #FF3E00;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+}
+@keyframes border-pulsate {
+  0%   { border-color: #FF3E00; }
+  50% { border-color: rgba(0, 255, 255, 0); }
+  100%   { border-color: #FF3E00; }
+}
+
+@media (max-width: 1000px){ 
+  .cuadrito{
+    .card-block {
+      .card-body {
+        font-size: 1rem !important;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        text-align: center;
+      }
+      img{
+        width: 80px;
+        height: 80px;
+      }
+      .btn {
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 24px;
+        padding: 4px 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){ 
+  .cuadrito{
+    .card-block {
+      .card-body {
+        font-size: 0.8rem !important;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+      }
+      img{
+        width: 80px;
+        height: 80px;
+      }
+      .btn {
+        font-weight: 300;
+        font-size: 0.8rem;
+        line-height: 24px;
+        padding: 3px 9px;
+      }
+    }
+  }
+}

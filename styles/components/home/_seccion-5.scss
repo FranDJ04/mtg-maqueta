@@ -1,0 +1,114 @@
+.home5 {
+    background: linear-gradient(180.03deg, #BDD44D 35.21%, #0087C4 97.39%);
+    @include margin-mobile();
+    .home5-left {
+      height: 380px;
+      span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 39px;
+        /* or 98% */
+  
+        letter-spacing: -1.8px;
+  
+        color: #ffffff;
+      }
+    }
+  
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 39px;
+      /* or 98% */
+  
+      letter-spacing: -1.8px;
+  
+      color: #23a6f0;
+    }
+  
+    .bordes {
+      min-height: 412px;
+  
+      .col-lg-2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .col-xl-2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+  
+      .opcion {
+        background: #ffffff;
+        height: 142px;
+        border-radius: 15px;
+        padding: 0 17px;
+  
+        span {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 17px;
+  
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.01em;
+  
+          color: #23a6f0;
+        }
+      }
+  
+      .opcion-activa {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.58) 0%,
+          rgba(255, 255, 255, 0.1) 100%
+        );
+        box-shadow: 0px 0px 28px 6px rgba(0, 209, 255, 0.66);
+        border-radius: 15px;
+        height: 142px;
+        padding: 0 17px;
+        span {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 17px;
+  
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.01em;
+  
+          color: #ffffff;
+        }
+      }
+    }
+    .boton{
+      .btn {
+        background: #ff8a07;
+        border-radius: 37px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+        padding: 10px 20px;
+      }
+      .btn:hover{
+        box-shadow: 0px 0px 7px 1px #ff9900;
+      }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .home5 {
+      @include margin-general();
+    }
+}

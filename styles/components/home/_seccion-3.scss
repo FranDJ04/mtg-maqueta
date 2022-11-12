@@ -1,0 +1,151 @@
+.home3 {
+    background: linear-gradient(180deg, #23a6f0 0%, #2375f0 62.59%);
+    @include margin-mobile();
+    &-left {
+      margin-bottom: 50px;
+  
+      span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.9rem;
+        line-height: 39px;
+        /* or 98% */
+  
+        letter-spacing: -1.8px;
+  
+        color: #ffffff !important;
+      }
+      .blanco-base {
+        width: 343px;
+        background: #ffffff;
+        border-radius: 25px 25px 0 0;
+        height: 40px;
+        margin-bottom: -1px;
+      }
+      .amarillo-base {
+        width: 343px;
+        background: #BDD44D;
+        border-radius: 25px 25px 0 0;
+        height: 40px;
+        margin-bottom: -1px;
+      }
+    }
+  
+    .bordes {
+      min-height: 270px;
+      margin-bottom: 40px;
+  
+      .col-lg-2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .col-xl-2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+ 
+      .carousel-indicators{
+        bottom: -45px;
+        li{
+          height: 15px;
+          border-radius: 50%;
+          width: 15px;
+        }
+      }
+
+      .icono{
+        cursor: pointer;
+      }
+  
+      .opcion {
+        background: #ffffff;
+        height: 142px;
+        border-radius: 15px;
+        padding: 0 17px;
+  
+        span {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 17px;
+  
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.01em;
+  
+          color: #23a6f0;
+        }
+      }
+  
+      .opcion:hover{
+        img{
+          filter: brightness(0) invert(1);
+        }
+      }
+  
+      .opcion-activa, .opcion:hover {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.58) 0%,
+          rgba(255, 255, 255, 0.1) 100%
+        );
+        box-shadow: 0px 0px 28px 6px rgba(0, 209, 255, 0.66);
+        border-radius: 15px;
+        height: 142px;
+        padding: 0 17px;
+        span {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 17px;
+  
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.01em;
+  
+          color: #ffffff;
+        }
+      }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .home3 {
+      @include margin-general();
+
+      span {
+        font-size: 40px;
+      }
+      &-left {
+        margin-bottom: 0px;
+        height: 460px;
+      }
+      .bordes{
+        margin-bottom: 0px;
+        .carousel-indicators{
+          bottom: -16px;
+          margin-top: 0px;
+          li{
+            height: 15px;
+            border-radius: 50%;
+            width: 15px;
+          }
+        }
+        .opcion {   
+          span {
+            font-size: 19px;
+            line-height: 18px;
+          }
+        }
+        .opcion-activa, .opcion:hover {
+          span {
+            font-size: 19px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,312 @@
+
+.home1 {
+    background-color: #24a6f0;
+  
+    &-left {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 560px;
+  
+      .formulario {        
+        min-height: 480px;
+        background: #ffffff;
+        border-radius: 25px;
+        //margin-top: 50px;
+
+        .btn-1 {
+          padding: 30px 10px;
+        }
+        .btn-2 {
+          padding: 30px 10px;
+        }
+
+        .btn-primary {
+          background: #23a6f0;
+          border-radius: 37px;
+        }
+        .btn-secondary {
+          border: 1px solid #23a6f0;
+          border-radius: 37px;
+          background: none;
+          color: #23a6f0;
+        }
+  
+        a {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: -0.04em;
+  
+          color: #23a6f0;
+        }
+        input {
+          // background: #ffffff;
+          // border: 0.5px solid #252b42;
+          border-radius: 4px;
+          height: 50.57px;
+        }
+      }
+  
+      .formulario2 {
+        width: 343px;
+        min-height: 357px;
+        background: #ffffff;
+        border-radius: 25px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        .btn-primary {
+          background: #23a6f0;
+          border-radius: 37px;
+        }
+        .btn-secondary {
+          border: 1px solid #23a6f0;
+          border-radius: 37px;
+          background: none;
+          color: #23a6f0;
+        }
+  
+        a {
+          cursor: pointer;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: -0.04em;
+          color: #23a6f0;
+          margin-bottom: 5px;
+        }
+        input {
+          background: #ffffff;
+          border: 0.5px solid #252b42;
+          border-radius: 4px;
+          height: 50.57px;
+        }
+      }
+  
+      .blanco-base {
+        width: 343px;
+        background: #ffffff;
+        border-radius: 25px 25px 0 0;
+        height: 40px;
+        margin-bottom: -1px;
+      }
+    }
+    &-center {
+      font-family: 'Archivo Black', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 49px;
+      line-height: 48px;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+  
+      .btn {
+        background: #f78107;
+        border-radius: 37px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+        padding: 10px 20px;
+      }
+    }
+    &-right {
+      height: 300px;
+      //background-position: right;
+      //background-size: cover;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .carousel-indicators{
+        li{
+          height: 15px;
+          border-radius: 50%;
+          width: 15px;
+          background-color: #23a6f0 !important;
+        }
+      }
+    }
+    &-text{
+      color: white;
+      letter-spacing: 0.2px;
+      h1{
+        font-size: 30px; 
+        font-weight: 700;
+      }
+      p{
+        font-size: 17px; 
+        font-weight: 600;
+      }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+  .home1 {
+    &-left {
+      padding-left: 70px;
+      .formulario {
+        .btn-1 {
+          padding: 25px 10px 30px 20px;
+        }
+        .btn-2 {
+          padding: 25px 20px 30px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px)  {
+  .home1 {
+    &-right {
+      img{
+        //object-fit: revert;
+        //width: 1950;
+        //height: 500;
+      }
+    }
+  }
+}
+
+
+.home-banner {
+  min-height: 180px;
+  background-position-x: right;
+  .home1-left { 
+    height: 560px;
+    .formulario {
+      max-width: fit-content;
+      margin: 10px 0;
+    }
+  }
+  .home1-right {
+    .carousel-indicators{
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+@media (min-width: 370px)  {
+  .home-banner {
+    min-height: 210px;
+  }
+}
+@media (min-width: 500px)  {
+  .home-banner {
+    min-height: 270px;
+    .home1-left {
+      .formulario {
+        margin: auto 25px;
+      }
+    }
+  }
+}
+@media (min-width: 720px)  {
+  .home-banner {
+    min-height: 400px;    
+    .home1-left {
+      .formulario {
+        margin: auto 150px;
+      }
+    }    
+  }
+}
+
+@media (min-width: 1020px)  {
+  .home-banner {
+    background-position-x: unset;
+    .home1-left, .home1-right { 
+      height: 440px;
+    }
+    .home1-left {
+      .formulario {
+        margin: 0;
+        margin-top: 10px;
+        max-width: 343px;
+      }
+    }    
+  }
+}
+@media (min-width: 1200px)  {
+  .home-banner {
+    .home1-left, .home1-right { 
+      height: 460px;
+    }
+    .home1-left {
+      .formulario {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+@media (min-width: 1300px)  {
+  .home-banner {
+    .home1-left, .home1-right { 
+      height: 490px;
+    }
+    .home1-left {
+      .formulario {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+@media (min-width: 1400px)  {
+  .home-banner {
+    .home1-left, .home1-right { 
+      height: 500px;
+    }
+    .home1-left {
+      .formulario {
+        margin-top: 65px;
+      }
+    }
+  }
+}
+@media (min-width: 1600px)  {
+  .home-banner {
+    min-height: 540px; 
+    .home1-left, .home1-right { 
+      height: 500px;
+    }
+    .home1-left {
+      .formulario {
+        margin-top: 65px;
+      }
+    }
+  }
+}
+@media (min-width: 1900px)  {
+  .home-banner {
+    .home1-left, .home1-right { 
+      height: 650px;
+    }
+    .home1-left {
+      .formulario {
+        max-width: 450px;
+      }
+      .blanco-base {
+        width: 450px;
+      }
+    }
+  }
+}
+@media (min-width: 1960px)  {
+  .home-banner {
+    .home1-left, .home1-right { 
+      height: 700px;
+    }
+  }
+}

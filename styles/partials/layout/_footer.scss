@@ -1,0 +1,145 @@
+footer {
+  background: #003558;
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  .card-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 550px;
+
+    > div {
+      display: inline-block;
+      width: 50%;
+      flex: 1 1 40px;
+    }
+    .block1 {
+      // LOGO
+      margin-bottom: 27px;
+    }
+
+    .block3 {
+      // TRANSPARENCIA
+      margin-top: 10px;
+    }
+    .block4 {
+      // CONTACTO
+      margin-top: 40px;
+    }
+    .block5 {
+      // RRSS
+      margin-bottom: 27px;
+      a {
+        display: inline-block;
+        padding-right: 10px;
+        height: 24px;
+      }
+    }
+    .block6 {
+      // DIRECCIONES
+      span {
+        margin-bottom: 6px;
+        line-height: 14px;
+        //white-space: nowrap;
+        overflow-wrap: break-word;
+      }
+    }
+    .block7 {
+      // SELLOS
+      // margin-top: 40px;
+      img {
+        margin: 10px 10px 10px 10px;
+        height: 39px;
+      }
+    }
+  }
+
+  p {
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.04em;
+    color: #0a91d6;
+    margin-bottom: 8px;
+  }
+
+  a,
+  span {
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+  }
+  a {
+    line-height: 25px;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  footer {
+    padding-top: 80px;
+    @include margin-general(1);
+
+    .card-columns {
+      max-height: 250px;
+
+      > div {
+        width: 17%;        
+      }
+
+      .block1 {
+        display: none;
+      }
+      .block2{        
+        order: 2;
+      }
+      .block3{
+        order: 5;
+        margin-top: 0;
+        min-height: 200px;
+      }
+      .block4{
+        order: 6;
+        margin-top: 0;
+        //min-height: 200px;
+      }
+      .block5{
+        order: 6;
+        margin-top: 15px;
+        margin-bottom: 110px;
+      }
+      .block6{
+        order: 4;
+      }
+      .block7{
+        order: 7;
+        margin-top: 0;
+        //width: 30%;
+      }
+
+    }
+    .logo-footer {
+      width: 172px;
+      margin-bottom: 27px;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  footer {
+    @include margin-mobile();
+
+    .logo-footer {
+      width: 111px;
+    }
+  }
+}
