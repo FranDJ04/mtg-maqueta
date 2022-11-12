@@ -1,1 +1,1 @@
-# mtg-maqueta
+# mtg-maqueta-pasantia
