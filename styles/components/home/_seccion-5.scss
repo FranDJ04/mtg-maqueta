@@ -1,22 +1,9 @@
 .home5 {
-    background: linear-gradient(180.03deg, #BDD44D 35.21%, #0087C4 97.39%);
-    @include margin-mobile();
-    .home5-left {
-      height: 380px;
-      span {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 39px;
-        /* or 98% */
+  background: linear-gradient(180.03deg, #BDD44D 35.21%, #0087C4 97.39%);
+  @include margin-mobile();
   
-        letter-spacing: -1.8px;
-  
-        color: #ffffff;
-      }
-    }
-  
+  &-left {
+    // height: 380px;
     span {
       font-family: 'Montserrat';
       font-style: normal;
@@ -24,91 +11,115 @@
       font-size: 40px;
       line-height: 39px;
       /* or 98% */
-  
+
       letter-spacing: -1.8px;
-  
-      color: #23a6f0;
+
+      color: #ffffff;
     }
-  
-    .bordes {
-      min-height: 412px;
-  
-      .col-lg-2 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-      .col-xl-2 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-  
-      .opcion {
-        background: #ffffff;
-        height: 142px;
-        border-radius: 15px;
-        padding: 0 17px;
-  
-        span {
-          font-family: 'Montserrat';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 17px;
-  
-          display: flex;
-          align-items: center;
-          letter-spacing: -0.01em;
-  
-          color: #23a6f0;
-        }
-      }
-  
-      .opcion-activa {
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.58) 0%,
-          rgba(255, 255, 255, 0.1) 100%
-        );
-        box-shadow: 0px 0px 28px 6px rgba(0, 209, 255, 0.66);
-        border-radius: 15px;
-        height: 142px;
-        padding: 0 17px;
-        span {
-          font-family: 'Montserrat';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 17px;
-  
-          display: flex;
-          align-items: center;
-          letter-spacing: -0.01em;
-  
-          color: #ffffff;
-        }
-      }
+  }
+
+  .home5-center {
+    height: 220px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    h4 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-size: 1.2rem;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      font-weight: 300;
     }
-    .boton{
-      .btn {
-        background: #ff8a07;
-        border-radius: 37px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.2px;
-        color: #ffffff;
-        padding: 10px 20px;
-      }
-      .btn:hover{
-        box-shadow: 0px 0px 7px 1px #ff9900;
-      }
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 39px;
+      letter-spacing: -1.8px;
+      color: #ffffff;
     }
+  }
+
+  .texto-1{
+    p{
+      color: #ffffff;
+    }
+    li{
+      color: #ffffff;
+      font-size: 25px;
+    }
+    .btn {
+      background: #ff8a07;
+      border-radius: 37px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      padding: 10px 20px;
+    }
+    .btn:hover{
+      box-shadow: 0px 0px 7px 1px #ff9900;
+    }
+  }
+
+  .texto-2{
+    img{
+      border-radius: 15px;
+      max-width: 290px;
+    }
+  }
 }
 
+
 @include media-breakpoint-up(lg) {
-    .home5 {
-      @include margin-general();
+  
+  .home5 {
+    @include margin-general();
+    &-left {
+      height: 380px;
     }
+    .texto-2{
+      img{
+        max-width: 420px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+  .home5 {
+    @include margin-general();
+    .texto-2{
+      img{
+        max-width: 311px;
+      }
+    }
+  }
+  .home5 {
+    @include margin-general();
+    
+    &-left {
+      height: 280px;
+      span {
+        font-size: 30px;
+      }
+    }
+    
+    .texto-1{
+      li{
+        font-size: 1.2rem;
+      }
+      .btn {
+        font-size: 0.8rem;
+        padding: 2px 20px;
+      }
+    }
+
+  }
 }

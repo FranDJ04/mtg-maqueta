@@ -13,7 +13,7 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: '' },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'origin-when-cross-origin' },
-  { key: 'Content-Security-Policy', value: "default-src * 'unsafe-inline' 'unsafe-eval' blob:; img-src * data: blob:; frame-src *; font-src 'self' data:" }
+  { key: 'Content-Security-Policy', value: "default-src * 'unsafe-inline' 'unsafe-eval' blob:; img-src * data: blob:; frame-src *; font-src * data:" }
 
 ]
 

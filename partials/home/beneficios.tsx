@@ -1,8 +1,8 @@
 const Beneficios = () => {
     return (
       <>
-       <div className="row align-items-center productos-servicios3">
-          <div className="col-lg-4 d-flex productos-servicios3-left justify-content-between flex-column">
+       <div className="row align-items-center home5">
+          <div className="col-lg-4 d-flex home5-left justify-content-between flex-column">
             <div>&nbsp;</div>
             <span>
               <b>¿Conoces los beneficios de la calefacción a gas natural?</b>
