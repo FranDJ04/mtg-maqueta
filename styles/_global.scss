@@ -2,8 +2,6 @@ body {
   font-family: 'Montserrat';
 }
 
-.content {
-}
 
 .pgheader {
   background-color: #24a6f0;
@@ -13,6 +11,7 @@ body {
     padding-left: 70px;
     height: 200px;
   }
+
   .blanco-base {
     width: 343px;
     background: #ffffff;
@@ -22,29 +21,106 @@ body {
   }
 }
 
-.titulo{
-  h1{
-      font-family: 'Archivo Black', sans-serif !important;
-      font-style: normal !important;
-      font-weight: 400 !important;
-      font-size: 40px !important;
-      line-height: 40px !important;
-      letter-spacing: 0.2px !important;
-      color: #ffffff;
+/* "CONOCE TU BOLETA ACA". Formatos eran diferentes, se cambian estilos*/
+.titulo {
+  h1 {
+    width: 355px;
+    height: 46px;
+    padding-left: 20px;
+    margin-left: 60px;
+
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    line-height: 48px !important;
+    letter-spacing: 0.2px !important;
+    color: #ffffff;
   }
-  h2{
+
+  /* Titulo "CONOCE TU BOLETA ACA"  */
+  @media (max-width: 600px) {
+    h1 {
+      padding-left: 0px;
+      text-align: center;
+      font-size: 20px !important;
+      width: 250px;
+      margin-left: 40px;
+      margin-top: 25px;
+      line-height: 30px !important;
+      height: 33px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-height: 1700px) {
+    h1 {
+      padding-left: 10px;
+      padding: 0px;
+      text-align: center;
+      font-size: 20px !important;
+      width: 250px;
+      margin-left: 60px;
+      margin-top: 20px;
+      line-height: 30px !important;
+      height: 33px;
+    }
+  }
+
+  @media (min-width: 250px) and (max-height: 690px) {
+    h1 {
+      padding-left: 10px;
+      padding: 0px;
+      text-align: center;
+      font-size: 20px !important;
+      width: 250px;
+      margin-left: 20px;
+      margin-top: 20px;
+      line-height: 30px !important;
+      height: 33px;
+    }
+  }
+
+  @media (min-width: 280px) and (max-height: 653px) {
+    h1 {
+      margin-left: 0px;
+    }
+  }
+
+
+
+  /*Sub Titulo "TU CUENTA MAS CLARA QUE NUNCA". Se cambian atributos ya que no eran los que correspondian*/
+  h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 48px; 
-    letter-spacing: 0.2px; 
+    font-size: 49px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
     color: #FFFFFF;
-    background: #BACF09;
+
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 60px;
+  }
+
+
+  /*"TU CUENTA MAS CLARA QUE NUNCA"  */
+  @media (max-width: 600px) {
+    H2 {
+      font-size: 34px;
+      margin-top: -30px;
+    }
   }
 }
+
+
+@media (max-width: 280px) {
+  H2 {
+    margin-left: -40px;
+  }
+}
+
+
+
 
 .pagina {
   margin-top: 70px;
@@ -53,10 +129,12 @@ body {
   p {
     width: 100%;
   }
+
   h5 {
     margin-top: 2rem;
   }
 }
+
 
 
 @include media-breakpoint-up(lg) {
@@ -65,12 +143,14 @@ body {
   }
 }
 
+
 .inversionistas {
   background: #ffffff;
   padding-left: 75px;
   padding-right: 75px;
   margin-top: 20px;
   margin-bottom: 60px;
+
   span {
     font-family: 'Montserrat';
     font-style: normal;
@@ -82,27 +162,78 @@ body {
   }
 }
 
+
+
+/*"TEXTO GENERAL 1". Se cambia atributos de todo el cuerpo */
 span.text-general {
+
   font-family: 'Open Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 26px;
-line-height: 32px;
-/* or 123% */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
 
-letter-spacing: 0.2px;
-
-color: #23A6F0;
+  letter-spacing: -0.04em;
+  color: #23A6F0;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
 }
 
+/*  "TEXTO GENERAL 1 " */
+.hoja1_cuerpo1 {
+  margin-left: 20px;
+}
+
+/* "TEXTO GENERAL Hoja 1 " */
+@media (max-width: 600px) {
+  span.text-general {
+    margin-top: -50px;
+    margin-left: 39px;
+    font-size: 18px;
+  }
+}
+
+
+
+
+/* Boton " CONOCE MAS AQUÍ "  se movio hacia arriba y se modficio mas a la izquierda. Tambien se agrando la fuente*/
 button.btn-redondeado {
-  background: #23a6f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+
+  width: 190px;
+  height: 44px;
+  background: #23A6F0;
   border-radius: 37px;
-  border-color: #23a6f0;
 }
 
+/* Btn "CONOCE MAS AQUÍ" se posiciona altura de btn para movil */
+@media (max-width: 600px) {
+  button.btn-redondeado {
+    width: 157px;
+    padding: 10PX 5px;
+    margin-left: 39px;
+    top: 500px;
+  }
+}
+
+.hoja1_cuerpo2 {
+  margin-left: 20px;
+}
+
+
+.hoja1_cuerpo2 {
+  margin-left: 20px;
+}
+
+
+/* TITULO "INFORMACION CLARA Y OTROS... */
 .boleta {
-  &-titulo{
+
+  &-titulo {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -110,9 +241,11 @@ button.btn-redondeado {
     line-height: 28px;
     letter-spacing: -0.04em;
     color: #23A6F0;
+    ;
     margin-bottom: 0.5rem;
   }
-  &-cuerpo{
+
+  &-cuerpo {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
@@ -124,6 +257,43 @@ button.btn-redondeado {
   }
 }
 
+/* Titutlo de "Informacion clara" y otros */
+@media (max-width: 600px) {
+  .h2 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+/* TEXTO GENERAL DE INFORMACION CLARA Y OTROS...*/
+@media (max-width: 600px) {
+  .boleta {
+    &-cuerpo {
+      margin-top: -40px;
+    }
+  }
+}
+
+/* Iconos de "Informacion clara" y otros */
+@media (max-width: 600px) {
+  .col-lg-1 {
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+/* *************************************  H O J A   D O S  ********************************************************* */
+
+
+
+/* Titulo primer parrafo */
 h4.boleta {
   font-family: 'Open Sans';
   font-style: normal;
@@ -134,6 +304,107 @@ h4.boleta {
   color: #23A6F0;
 }
 
+@media (max-width: 600px) {
+  h4.boleta {
+    margin-top: -30px;
+    font-size: 26px;
+  }
+}
+
+
+
+/*Titulo segundo parrafo */
+
+.boleta_sub2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+}
+
+@media (max-width: 600px) {
+  .boleta_sub2 {
+    margin-top: 80px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 280px) {
+  .boleta_sub2 {
+    margin-top: -80px;
+  }
+}
+
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .boleta_sub2 {
+    margin-top: 200px;
+  }
+}
+
+
+/* "TEXTO GENERAL Hoja 2 " */
+.texto_hoja2 {
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+
+  letter-spacing: -0.04em;
+  color: #23A6F0;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+}
+
+/* "TEXTO GENERAL Hoja 2 " */
+@media (max-width: 600px) {
+  .texto_hoja2 {
+    margin-top: 10px;
+    margin-left: 39px;
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+/* "TEXTO GENERAL Hoja 2 PARTE 2" */
+.texto_hoja2_parte2 {
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+
+  letter-spacing: -0.04em;
+  color: #23A6F0;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+}
+
+/* "TEXTO GENERAL Hoja 2 PARTE 2" */
+@media (max-width: 600px) {
+  .texto_hoja2_parte2 {
+    margin-top: 20px;
+    margin-left: 39px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .panel2_hoja2 {
+    margin-top: 500px;
+  }
+}
+
+/* Recuadros de pagina 2  "NUMERO DE CLIENTE,TOTAL A PAGAR Y OTROS....  */
 .card-block {
   background: #FBFBFB;
   border: 1px solid rgba(35, 166, 240, 0.5);
@@ -147,7 +418,7 @@ h4.boleta {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 32px; 
+    line-height: 32px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
   }
@@ -161,10 +432,17 @@ h4.boleta {
     letter-spacing: 0.2px;
     color: #23A6F0;
   }
-
 }
 
-.boleta-boton{
+
+@media (min-width: 1920px) and (max-height: 1080px) {
+  .mb-5 {
+    margin-bottom: 10rem;
+  }
+}
+
+
+.boleta-boton {
   .btn {
     background: #BACF09;
     border-radius: 37px;
@@ -177,16 +455,19 @@ h4.boleta {
     color: #ffffff;
     padding: 10px 20px;
   }
-  .btn:hover{
+
+  .btn:hover {
     box-shadow: 0px 0px 7px 1px #9fad2d;
   }
 }
 
-.cuadrito{
+/* RECUADROS VERDE HOJA 2 "confirma tu suscrpcion aqui" */
+.cuadrito {
   .card-block {
     background: #BACF09;
     border: 1px solid #BACF09;
     border-radius: 15px;
+
     .card-body {
       font-family: 'Open Sans';
       font-style: normal;
@@ -196,10 +477,13 @@ h4.boleta {
       letter-spacing: 0.2px;
       color: #FFFFFF;
     }
-    img{
+
+    img {
       width: 120px;
       height: 120px;
     }
+
+    /* boton de "confirma tu suscrpcion aqui" */
     .btn {
       background: #23A6F0;
       border-radius: 37px;
@@ -212,19 +496,23 @@ h4.boleta {
       color: #ffffff;
       padding: 10px 20px;
     }
-    .btn:hover{
+
+    .btn:hover {
       box-shadow: 0px 0px 7px 1px #23A6F0;
     }
   }
 }
 
-.bullet-point {  
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid #FF3E00;
-    padding: 4px;
-    animation: border-pulsate 1.5s infinite;
-    cursor: pointer;
+
+
+.bullet-point {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #FF3E00;
+  padding: 4px;
+  animation: border-pulsate 1.5s infinite;
+  cursor: pointer;
+
   div {
     background: #FF3E00;
     width: 14px;
@@ -232,14 +520,23 @@ h4.boleta {
     border-radius: 50%;
   }
 }
+
 @keyframes border-pulsate {
-  0%   { border-color: #FF3E00; }
-  50% { border-color: rgba(0, 255, 255, 0); }
-  100%   { border-color: #FF3E00; }
+  0% {
+    border-color: #FF3E00;
+  }
+
+  50% {
+    border-color: rgba(0, 255, 255, 0);
+  }
+
+  100% {
+    border-color: #FF3E00;
+  }
 }
 
-@media (max-width: 1000px){ 
-  .cuadrito{
+@media (max-width: 1000px) {
+  .cuadrito {
     .card-block {
       .card-body {
         font-size: 1rem !important;
@@ -247,10 +544,12 @@ h4.boleta {
         letter-spacing: 0.2px;
         text-align: center;
       }
-      img{
+
+      img {
         width: 80px;
         height: 80px;
       }
+
       .btn {
         font-weight: 300;
         font-size: 0.9rem;
@@ -261,18 +560,22 @@ h4.boleta {
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1200px){ 
-  .cuadrito{
+
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .cuadrito {
     .card-block {
       .card-body {
         font-size: 0.8rem !important;
         line-height: 18px;
         letter-spacing: 0.2px;
       }
-      img{
+
+      img {
         width: 80px;
         height: 80px;
       }
+
       .btn {
         font-weight: 300;
         font-size: 0.8rem;
@@ -281,4 +584,5 @@ h4.boleta {
       }
     }
   }
+
 }

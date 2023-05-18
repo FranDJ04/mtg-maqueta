@@ -4,8 +4,18 @@
 // Headings
 //
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin-bottom: $headings-margin-bottom;
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
@@ -13,12 +23,35 @@ h1, h2, h3, h4, h5, h6,
   color: $headings-color;
 }
 
-h1, .h1 { @include font-size($h1-font-size); }
-h2, .h2 { @include font-size($h2-font-size); }
-h3, .h3 { @include font-size($h3-font-size); }
-h4, .h4 { @include font-size($h4-font-size); }
-h5, .h5 { @include font-size($h5-font-size); }
-h6, .h6 { @include font-size($h6-font-size); }
+h1,
+.h1 {
+  @include font-size($h1-font-size);
+}
+
+h2,
+.h2 {
+  @include font-size($h2-font-size);
+}
+
+h3,
+.h3 {
+  @include font-size($h3-font-size);
+}
+
+h4,
+.h4 {
+  @include font-size($h4-font-size);
+}
+
+h5,
+.h5 {
+  @include font-size($h5-font-size);
+}
+
+h6,
+.h6 {
+  @include font-size($h6-font-size);
+}
 
 .lead {
   @include font-size($lead-font-size);
@@ -31,16 +64,19 @@ h6, .h6 { @include font-size($h6-font-size); }
   font-weight: $display1-weight;
   line-height: $display-line-height;
 }
+
 .display-2 {
   @include font-size($display2-size);
   font-weight: $display2-weight;
   line-height: $display-line-height;
 }
+
 .display-3 {
   @include font-size($display3-size);
   font-weight: $display3-weight;
   line-height: $display-line-height;
 }
+
 .display-4 {
   @include font-size($display4-size);
   font-weight: $display4-weight;
@@ -89,6 +125,7 @@ mark,
 .list-inline {
   @include list-unstyled();
 }
+
 .list-inline-item {
   display: inline-block;
 
@@ -122,4 +159,466 @@ mark,
   &::before {
     content: "\2014\00A0"; // em dash, nbsp
   }
+}
+
+
+
+
+/* Titulo "CONOCE TU BOLETA ACÁ". Se asigna color a traves de clase  */
+$color-fondos_h1: #BACF09;
+
+.backcolorH1 {
+
+  background-color: $color-fondos_h1;
+  width: 412px;
+  height: 46px;
+  left: 86px;
+  top: 375px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  /* or 171% */
+
+  letter-spacing: 0.2px;
+
+  color: #FFFFFF;
+}
+
+.text-general pr-5 {
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  /* or 123% */
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+}
+
+
+// Btn " CAMBIATE AQUI" . Estilos del boton 
+.btn_cambiate {
+
+  width: 191px;
+  height: 43px;
+  padding: 10px 30px;
+  background: #BACF09;
+  border-radius: 100px;
+  padding-left: 11px;
+  margin-left: 60px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+
+/* "CAMBIATE AQUÍ" se le indica altura formato movil */
+@media (max-width: 600px) {
+  .btn_cambiate {
+    top: 190px;
+    font-size: 16px;
+    padding-left: 8px;
+    padding: 10PX 10px;
+    margin-left: 85px;
+  }
+}
+
+
+
+@media (max-width: 280px) {
+  .btn_cambiate {
+    margin-left: 40px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  h2,
+  .h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+/* VIDEO.  Se agrego clase video luego media */
+.video_boleta {
+  height: 370px;
+  width: 100%;
+}
+
+/* VIDEO HOJA 1. Altura */
+@media (max-width: 600px) {
+  .video_boleta {
+    height: 250px;
+  }
+}
+
+@media (min-width: 650px) and (max-height: 1180px) {
+  .video_boleta {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 540px) and (max-height: 1368px) {
+  .video_boleta {
+    margin-top: 70px;
+  }
+}
+
+
+// NUBE 1
+.nube_1 {
+  margin-top: -2rem;
+  margin-left: 18rem;
+}
+
+// NUBE 2
+.nube_2 {
+  margin-top: -19rem;
+  margin-left: 15rem;
+}
+
+// NUBE 3
+.nube_3 {
+  margin-top: -25rem;
+  margin-left: -19rem;
+}
+
+// NUBE 4
+.nube_4 {
+  margin-top: -10rem;
+  margin-left: -65rem;
+}
+
+@media (max-width: 1500px) {
+  .nube_4 {
+    margin-top: -10rem;
+    margin-left: -45rem;
+  }
+}
+
+
+
+/* NUBES. Ocultar nube 1  */
+@media (max-width: 600px) {
+  .nube_1 {
+    display: none;
+  }
+}
+
+/* NUBES. Ocultar nube 2 */
+@media (max-width: 600px) {
+  .nube_2 {
+    display: none;
+  }
+}
+
+/* NUBES. Ocultar nube 3 */
+@media (max-width: 600px) {
+  .nube_3 {
+    display: none;
+  }
+}
+
+/* NUBES. Ocultar nube 4*/
+@media (max-width: 600px) {
+  .nube_4 {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1368px) {
+  .nube_1 {
+    margin-top: -300px;
+    margin-left: 190px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1368px) {
+  .nube_2 {
+    margin-top: -100px;
+    margin-left: 180px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1368px) {
+  .nube_3 {
+    margin-top: -300px;
+    margin-left: -250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1368px) {
+  .nube_4 {
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* ICONO HOJA. Ocultar */
+@media (max-width: 600px) {
+  .icono_hoja {
+    display: none;
+  }
+}
+
+
+
+
+
+/* OCULTAR CARRUSEL DEKSTOP PARA QUE NO SE VEA EN FORMATO MOVIL*/
+@media (max-width: 600px) {
+  .carousel-inner {
+    display: none;
+  }
+}
+
+/* OCULTAR CARRUSEL MOVIL PARA QUE NO SE VEA EN FORMATO DEKSTOP*/
+@media (min-width: 1000px) {
+  .carousel-inner_movil {
+    display: none;
+  }
+}
+
+/* OCULTAR CARRUSEL MOVIL PARA QUE NO SE VEA EN FORMATO IPOD*/
+@media (min-width: 768px) and (max-height: 1700px) {
+  .carousel-inner_movil {
+    display: none;
+  }
+}
+
+
+/* BOTON 1 Vision1  */
+.btn_1 {
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  padding-left: 13px;
+  background: #BACF09;
+  margin-left: 125px;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+
+@media (min-width: 400px) and (max-width: 930px) {
+  .btn_1 {
+    margin-left: 143px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .btn_1 {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 280px) {
+  .btn_1 {
+    margin-left: 75px;
+  }
+}
+
+
+/* BOTON 2 Vision2  */
+.btn_2 {
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  padding-left: 13px;
+  background: #BACF09;
+  margin-left: 5px;
+
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+
+/* BOTON 3 Vision3  */
+.btn_3 {
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  padding-left: 13px;
+  background: #BACF09;
+  margin-left: 5px;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+
+/* BOTON 4 Vision3  */
+.btn_4 {
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 8px 15px;
+  padding-left: 12px;
+  background: #BACF09;
+  margin-left: 125px;
+  margin-top: -19px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+
+}
+
+@media (min-width: 400px) and (max-width: 930px) {
+  .btn_4 {
+    margin-left: 140px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .btn_4 {
+    margin-left: 215px;
+  }
+}
+
+@media (max-width: 280px) {
+  .btn_4 {
+    margin-left: 80px;
+  }
+}
+
+/* BOTON 5 Vision3  */
+.btn_5 {
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 8px 15px;
+  padding-left: 10px;
+  background: #BACF09;
+  margin-left: 5px;
+  margin-top: -19px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .btn_5 {
+    margin-left: 5px;
+  }
+}
+
+/* BOTON 6 Vision3  */
+.btn_6 {
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  padding-left: 12px;
+  background: #BACF09;
+  margin-left: 135px;
+  margin-top: 0px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+
+}
+
+
+@media (min-width: 400px) and (max-width: 930px) {
+  .btn_6 {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .btn_6 {
+    margin-left: 215px;
+  }
+}
+
+@media (max-width: 280px) {
+  .btn_6 {
+    margin-left: 80px;
+  }
+}
+
+/* BOTON 7 Vision3  */
+.btn_7 {
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  padding-left: 13px;
+  background: #BACF09;
+  margin-left: 5px;
+  margin-top: 0px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 189;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+
 }
